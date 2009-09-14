@@ -1,4 +1,11 @@
-AUTHOR: Adam Plumb
-DEPENDENCIES: python-exiv2, gnome, python, libexiv2
+AUTHOR
+Adam Plumb
 
+DEPENDENCIES
+python-exiv2, gnome, python, libexiv2
+
+DESCRIPTION
 PhotoRate is a nautilus file manager extension (for GNOME) that allows you to rate an image from 1 to 5 from the context menu, where rating the imagge modifies its metadata (using the pyexiv2 library).  There are two mechanisms to display the current rating to the user.  One is a column that you can add by going to Edit -> Preferences -> List Columns, and then check the "Rating" column.  The other mechanism is, if you've installed the emblems, each photo will show an emblem next to it corresponding to its rating.
+
+INSTALL
+Copy PhotoRate.py to your ~/.nautilus/python-extensions folder.  To install the emblems, copy them to your ~/.icons/hicolor/scalable/emblems folder.  If those folders don't exist, you can create them.  To install for all users, copy PhotoRate.py to /usr/lib/nautilus/extensions-2.0/python and copy the emblems to /usr/share/icons/hicolor/scalable/emblems.  Then restart nautilus by typing: nautilus -q && nautilus --no-desktop
